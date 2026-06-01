@@ -70,7 +70,7 @@ export default function DashboardHeader({
 
         {/* Dynamic Header Descriptor */}
         <div className="space-y-0.5">
-          <span className="text-[10px] sm:text-xs uppercase font-bold tracking-widest text-oasis-sage block">
+          <span className="text-[0.7rem] sm:text-xs uppercase font-bold tracking-widest text-oasis-sage block">
             {details.category}
           </span>
           <h2 className="text-lg sm:text-xl font-black text-oasis-ink font-serif leading-tight">
@@ -82,14 +82,14 @@ export default function DashboardHeader({
       {/* Right Tools Hub */}
       <div className="flex items-center gap-4">
         {/* Time Stamp Clock (Web feeling) */}
-        <div className="hidden md:flex items-center gap-2 bg-[#FAF6ED] border border-[#E5DFCE] text-oasis-sage font-mono text-[10px] px-3 py-1.5 rounded-xl font-bold">
+        <div className="hidden md:flex items-center gap-2 bg-[#FAF6ED] border border-[#E5DFCE] text-oasis-sage font-mono text-[0.7rem] px-3 py-1.5 rounded-xl font-bold">
           <Clock className="w-3.5 h-3.5 text-oasis-clay" />
           <span>UTC SERVER ACTIVE</span>
         </div>
 
         {/* 100% Sovereign Cloudless Badge */}
         <div className="flex items-center">
-          <span className="bg-[#EFF5F1] text-oasis-forest border border-[#DCEAE1] text-[10px] font-extrabold px-3 py-1.5 rounded-full uppercase flex items-center gap-1.5 shadow-2xs select-none">
+          <span className="bg-[#EFF5F1] text-oasis-forest border border-[#DCEAE1] text-[0.7rem] font-extrabold px-3 py-1.5 rounded-full uppercase flex items-center gap-1.5 shadow-2xs select-none">
             <span className="w-1.5 h-1.5 rounded-full bg-[#CD6040] animate-pulse"></span>
             100% Offline
           </span>

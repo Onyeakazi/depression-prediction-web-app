@@ -87,7 +87,7 @@ export default function HomeView({ onStartAssessment, onViewChange, history = []
         {/* Card A: Real-Time Local Activity Stats */}
         <div className="bg-white border border-[#E5DFCE] rounded-2xl p-6 shadow-2xs flex flex-col justify-between relative group hover:border-[#CD6040]/30 transition-all duration-300">
           <div className="space-y-3">
-            <span className="text-[10px] uppercase font-bold tracking-widest text-[#CD6040] block">
+            <span className="text-[0.7rem] uppercase font-bold tracking-widest text-[#CD6040] block">
               Local Vault Metrics
             </span>
             <h3 className="text-3xl font-black font-serif text-oasis-ink tracking-tight">
@@ -118,7 +118,7 @@ export default function HomeView({ onStartAssessment, onViewChange, history = []
         {/* Card B: Diagnostic Score Baseline status */}
         <div className="bg-white border border-[#E5DFCE] rounded-2xl p-6 shadow-2xs flex flex-col justify-between relative group hover:border-[#CD6040]/30 transition-all duration-300">
           <div className="space-y-3">
-            <span className="text-[10px] uppercase font-bold tracking-widest text-oasis-sage block">
+            <span className="text-[0.7rem] uppercase font-bold tracking-widest text-oasis-sage block">
               Cumulative State
             </span>
             
@@ -166,10 +166,10 @@ export default function HomeView({ onStartAssessment, onViewChange, history = []
         <div className="bg-[#FAF6ED] border border-[#E3DCCE] rounded-2xl p-6 shadow-2xs flex flex-col justify-between">
           <div className="space-y-2">
             <div className="flex items-center justify-between">
-              <span className="text-[10px] uppercase font-bold tracking-widest text-oasis-sage">
+              <span className="text-[0.7rem] uppercase font-bold tracking-widest text-oasis-sage">
                 Security Node Status
               </span>
-              <span className="bg-[#EFF5F1] text-oasis-forest border border-[#DCEAE1] text-[9px] font-black px-2 py-0.5 rounded-full uppercase">
+              <span className="bg-[#EFF5F1] text-oasis-forest border border-[#DCEAE1] text-[0.65rem] font-black px-2 py-0.5 rounded-full uppercase">
                 Active
               </span>
             </div>
@@ -184,7 +184,7 @@ export default function HomeView({ onStartAssessment, onViewChange, history = []
 
           <div className="pt-3 border-t border-[#E3DCCE] mt-3 flex items-center gap-2">
             <ShieldCheck className="w-4 h-4 text-[#CD6040]" />
-            <span className="text-[10px] uppercase font-bold text-oasis-ink/80 tracking-wide">
+            <span className="text-[0.7rem] uppercase font-bold text-oasis-ink/80 tracking-wide">
               Isolated Web Client Sandbox
             </span>
           </div>
@@ -194,7 +194,7 @@ export default function HomeView({ onStartAssessment, onViewChange, history = []
       {/* 2. LIVE INTERACTIVE BREATHING EXERCISE MINDFULNESS WIDGET */}
       <section className="bg-[#EFF5F1] border border-[#DCEAE1] rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden shadow-xs">
         <div className="max-w-md space-y-3 shrink-1 text-center md:text-left">
-          <div className="inline-flex items-center gap-1.5 bg-white border border-[#DCEAE1] text-oasis-forest font-sans text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-1.5 bg-white border border-[#DCEAE1] text-oasis-forest font-sans text-[0.7rem] px-3 py-1 rounded-full font-bold uppercase tracking-wider">
             <Wind className="w-3.5 h-3.5 text-oasis-clay animate-pulse" />
             Interactive Micro-Mindfulness Tool
           </div>
@@ -244,7 +244,7 @@ export default function HomeView({ onStartAssessment, onViewChange, history = []
           >
             {/* Center Text displaying active focus instructions */}
             <div className="text-center select-none">
-              <span className="text-[10px] uppercase font-bold tracking-widest text-[#CD6040] block font-sans">
+              <span className="text-[0.7rem] uppercase font-bold tracking-widest text-[#CD6040] block font-sans">
                 {breathState === 'idle' && 'Breathe'}
                 {breathState === 'inhale' && 'Inhale'}
                 {breathState === 'hold' && 'Hold'}
@@ -257,7 +257,7 @@ export default function HomeView({ onStartAssessment, onViewChange, history = []
           </div>
 
           {/* Subtitle guide dot indicators */}
-          <div className="absolute bottom-2 font-mono text-[9px] font-bold text-oasis-sage uppercase opacity-80">
+          <div className="absolute bottom-2 font-mono text-[0.65rem] font-bold text-oasis-sage uppercase opacity-80">
             {breathState !== 'idle' ? 'Box loop' : 'Tactile focus'}
           </div>
         </div>

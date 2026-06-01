@@ -4,6 +4,7 @@
  */
 
 import { useState } from 'react';
+import siteIcon from '@/assets/icon.png';
 import {
   ArrowRight,
   Heart,
@@ -62,21 +63,23 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
       {/* PREMIUM TOP HEADER NAVBAR */}
       <header className="relative z-10 max-w-7xl mx-auto px-6 py-6 sm:py-8 flex items-center justify-between border-b border-oasis-straw/60 backdrop-blur-xs bg-[#FAF8F2]/80">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-[#CD6040] flex items-center justify-center shadow-lg shadow-[#CD6040]/15 text-white">
-            <Heart className="w-5 h-5 fill-white/10 text-white animate-pulse" />
-          </div>
+          <img 
+            src={siteIcon} 
+            alt="SymptomScribe Logo" 
+            className="w-10 h-10 rounded-xl shadow-lg shadow-[#CD6040]/15 object-cover"
+          />
           <div>
             <h1 className="text-xl font-black tracking-tight font-serif text-oasis-ink leading-none">
               SymptomScribe
             </h1>
-            <p className="text-[9px] sm:text-[10px] uppercase text-oasis-sage font-bold tracking-widest font-sans mt-0.5">
+            <p className="text-[0.65rem] sm:text-[0.7rem] uppercase text-oasis-sage font-bold tracking-widest font-sans mt-0.5">
               Sovereign Health Companion
             </p>
           </div>
         </div>
 
         <div className="flex items-center gap-4">
-          <div className="hidden sm:flex items-center gap-1.5 bg-[#EFF5F1] text-oasis-forest border border-[#DCEAE1] text-[10px] font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider shadow-2xs select-none">
+          <div className="hidden sm:flex items-center gap-1.5 bg-[#EFF5F1] text-oasis-forest border border-[#DCEAE1] text-[0.7rem] font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider shadow-2xs select-none">
             <ShieldCheck className="w-3.5 h-3.5 text-[#CD6040]" />
             100% Offline Sandbox
           </div>
@@ -97,7 +100,7 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
 
           {/* Left Column: Premium Pitch */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 bg-[#FDF3F0] border border-[#F7DFD6] text-[#CD6040] font-sans text-[10px] sm:text-xs px-4.5 py-1.5 rounded-full font-bold uppercase tracking-wider shadow-3xs animate-fade-in">
+            <div className="inline-flex items-center gap-2 bg-[#FDF3F0] border border-[#F7DFD6] text-[#CD6040] font-sans text-[0.7rem] sm:text-xs px-4.5 py-1.5 rounded-full font-bold uppercase tracking-wider shadow-3xs animate-fade-in">
               <Sparkles className="w-3.5 h-3.5 fill-[#CD6040]/10" />
               Private PHQ-9 Screener Intake &bull; Fuzzy Logic Engine
             </div>
@@ -133,22 +136,22 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
             <div className="pt-8 border-t border-[#F1ECE0] grid grid-cols-3 gap-4 text-left max-w-lg mx-auto lg:mx-0">
               <div>
                 <span className="block text-2xl font-black text-oasis-ink font-serif">100%</span>
-                <span className="text-[10px] uppercase font-bold text-oasis-sage tracking-wider">Client-Side Secure</span>
+                <span className="text-[0.7rem] uppercase font-bold text-oasis-sage tracking-wider">Client-Side Secure</span>
               </div>
               <div className="border-l border-[#E5DFCE] pl-4">
                 <span className="block text-2xl font-black text-oasis-ink font-serif">PHQ-9</span>
-                <span className="text-[10px] uppercase font-bold text-oasis-sage tracking-wider">Clinical Standard</span>
+                <span className="text-[0.7rem] uppercase font-bold text-oasis-sage tracking-wider">Clinical Standard</span>
               </div>
               <div className="border-l border-[#E5DFCE] pl-4">
                 <span className="block text-2xl font-black text-oasis-ink font-serif">Fuzzy</span>
-                <span className="text-[10px] uppercase font-bold text-oasis-sage tracking-wider">Centroid Mapping</span>
+                <span className="text-[0.7rem] uppercase font-bold text-oasis-sage tracking-wider">Centroid Mapping</span>
               </div>
             </div>
           </div>
 
           {/* Right Column: Premium Interactive Fuzzy Logic Interactive Mockup */}
           <div className="lg:col-span-5 bg-white border border-[#E5DFCE] rounded-3xl p-6 sm:p-8 shadow-xl relative group hover:border-[#CD6040]/30 transition-all duration-300">
-            <div className="absolute top-3 right-3 bg-[#FAF6ED] border border-[#E5DFCE] text-[8px] sm:text-[9px] font-bold text-oasis-sage uppercase px-2 py-0.5 rounded-md flex items-center gap-1 select-none">
+            <div className="absolute top-3 right-3 bg-[#FAF6ED] border border-[#E5DFCE] text-[0.6rem] sm:text-[0.65rem] font-bold text-oasis-sage uppercase px-2 py-0.5 rounded-md flex items-center gap-1 select-none">
               <Brain className="w-3 h-3 text-[#CD6040]" />
               Fuzzy Mathematics Demo
             </div>
@@ -158,7 +161,7 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
                 <h4 className="font-serif font-black text-lg text-oasis-ink leading-tight">
                   Dynamic Defuzzifier Simulator
                 </h4>
-                <p className="text-[11px] text-oasis-sage leading-relaxed font-sans">
+                <p className="text-xs text-oasis-sage leading-relaxed font-sans">
                   Drag the slider below to witness how physical PHQ-9 scores activate multi-layered mathematical membership curves in real-time.
                 </p>
               </div>
@@ -166,7 +169,7 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
               {/* Slider Controller */}
               <div className="space-y-2 bg-[#FAF8F2] p-4 rounded-xl border border-oasis-straw">
                 <div className="flex justify-between items-center">
-                  <span className="text-[10px] uppercase font-black text-oasis-sage tracking-wide">
+                  <span className="text-[0.7rem] uppercase font-black text-oasis-sage tracking-wide">
                     Input PHQ-9 Sum:
                   </span>
                   <span className="text-xl font-serif font-black text-[#CD6040]">
@@ -181,7 +184,7 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
                   onChange={(e) => setMockScore(Number(e.target.value))}
                   className="w-full h-2 bg-[#E5DFCE] rounded-lg appearance-none cursor-pointer accent-[#CD6040] focus:outline-none"
                 />
-                <div className="flex justify-between text-[9px] font-bold text-oasis-sage uppercase px-1">
+                <div className="flex justify-between text-[0.65rem] font-bold text-oasis-sage uppercase px-1">
                   <span>0 (None)</span>
                   <span>14 (Moderate)</span>
                   <span>27 (Severe)</span>
@@ -190,13 +193,13 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
 
               {/* Fuzzy Membership Visual Bars */}
               <div className="space-y-3.5">
-                <span className="text-[10px] uppercase font-black text-oasis-sage tracking-wider block">
+                <span className="text-[0.7rem] uppercase font-black text-oasis-sage tracking-wider block">
                   Activated Membership States (Centroid Mapping):
                 </span>
 
                 {/* State 1: None */}
                 <div className="space-y-1">
-                  <div className="flex justify-between text-[11px] font-bold">
+                  <div className="flex justify-between text-xs font-bold">
                     <span className="text-oasis-forest">Minimal / None Status</span>
                     <span className="font-mono text-oasis-sage">{(memberships.none * 100).toFixed(0)}%</span>
                   </div>
@@ -210,7 +213,7 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
 
                 {/* State 2: Mild */}
                 <div className="space-y-1">
-                  <div className="flex justify-between text-[11px] font-bold">
+                  <div className="flex justify-between text-xs font-bold">
                     <span className="text-oasis-forest">Mild Severity Range</span>
                     <span className="font-mono text-oasis-sage">{(memberships.mild * 100).toFixed(0)}%</span>
                   </div>
@@ -224,7 +227,7 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
 
                 {/* State 3: Moderate */}
                 <div className="space-y-1">
-                  <div className="flex justify-between text-[11px] font-bold">
+                  <div className="flex justify-between text-xs font-bold">
                     <span className="text-[#CD6040]">Moderate Clinical Phase</span>
                     <span className="font-mono text-oasis-sage">{(memberships.moderate * 100).toFixed(0)}%</span>
                   </div>
@@ -238,7 +241,7 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
 
                 {/* State 4: Severe */}
                 <div className="space-y-1">
-                  <div className="flex justify-between text-[11px] font-bold">
+                  <div className="flex justify-between text-xs font-bold">
                     <span className="text-[#CD6040] font-black">Severe Diagnosis Vector</span>
                     <span className="font-mono text-oasis-sage">{(memberships.severe * 100).toFixed(0)}%</span>
                   </div>
@@ -254,7 +257,7 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
               {/* Centroid Classification Output */}
               <div className="bg-[#EFF5F1] border border-[#DCEAE1] p-4 rounded-2xl flex items-center justify-between">
                 <div className="space-y-0.5">
-                  <span className="text-[8px] sm:text-[9px] uppercase font-black text-oasis-forest tracking-wider block">
+                  <span className="text-[0.6rem] sm:text-[0.65rem] uppercase font-black text-oasis-forest tracking-wider block">
                     Centroid Weighted Synthesis
                   </span>
                   <span className="font-serif font-black text-base text-oasis-forest leading-none">
@@ -263,7 +266,7 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
                 </div>
                 <button
                   onClick={onStartAssessment}
-                  className="bg-oasis-forest text-white hover:bg-oasis-ink font-sans font-bold text-[10px] px-3.5 py-2 rounded-xl uppercase tracking-wider transition-colors cursor-pointer"
+                  className="bg-oasis-forest text-white hover:bg-oasis-ink font-sans font-bold text-[0.7rem] px-3.5 py-2 rounded-xl uppercase tracking-wider transition-colors cursor-pointer"
                 >
                   Verify Now
                 </button>
@@ -275,7 +278,7 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
         {/* TRUST PILLARS BENTO GRID */}
         <section className="space-y-8 pt-10" aria-label="Product Features">
           <div className="text-center space-y-2">
-            <span className="text-[10px] uppercase font-black tracking-widest text-[#CD6040]">
+            <span className="text-[0.7rem] uppercase font-black tracking-widest text-[#CD6040]">
               Architectural Standard
             </span>
             <h3 className="text-2xl sm:text-3xl font-black font-serif text-oasis-ink tracking-tight">
@@ -303,7 +306,7 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
                   </p>
                 </div>
               </div>
-              <ul className="text-[11px] font-sans text-oasis-sage space-y-1.5 pt-4 border-t border-[#F1ECE0] mt-4 font-semibold">
+              <ul className="text-xs font-sans text-oasis-sage space-y-1.5 pt-4 border-t border-[#F1ECE0] mt-4 font-semibold">
                 <li className="flex items-center gap-1.5">
                   <CheckCircle className="w-3.5 h-3.5 text-oasis-sage shrink-0" />
                   Zero server trackers or APIs
@@ -330,7 +333,7 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
                   </p>
                 </div>
               </div>
-              <ul className="text-[11px] font-sans text-oasis-sage space-y-1.5 pt-4 border-t border-[#F1ECE0] mt-4 font-semibold">
+              <ul className="text-xs font-sans text-oasis-sage space-y-1.5 pt-4 border-t border-[#F1ECE0] mt-4 font-semibold">
                 <li className="flex items-center gap-1.5">
                   <CheckCircle className="w-3.5 h-3.5 text-[#CD6040] shrink-0" />
                   Clinical PHQ-9 screening metrics
@@ -357,7 +360,7 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
                   </p>
                 </div>
               </div>
-              <ul className="text-[11px] font-sans text-oasis-sage space-y-1.5 pt-4 border-t border-[#E3DCCE] mt-4 font-semibold">
+              <ul className="text-xs font-sans text-oasis-sage space-y-1.5 pt-4 border-t border-[#E3DCCE] mt-4 font-semibold">
                 <li className="flex items-center gap-1.5">
                   <CheckCircle className="w-3.5 h-3.5 text-oasis-sage shrink-0" />
                   Calming 4s-4s-4s pacing cycles
@@ -377,7 +380,7 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
           <div className="absolute top-[-30%] right-[-10%] w-[350px] h-[350px] bg-[#2C4636] rounded-full blur-[80px] opacity-40 pointer-events-none" />
 
           <div className="max-w-2xl space-y-6 relative z-10">
-            <span className="text-[10px] uppercase font-bold tracking-widest text-[#8EAF9D]">
+            <span className="text-[0.7rem] uppercase font-bold tracking-widest text-[#8EAF9D]">
               Secure intake gateway
             </span>
             <h3 className="text-3xl sm:text-4xl font-black font-serif tracking-tight leading-tight">
@@ -407,9 +410,9 @@ export default function LandingView({ onEnterDashboard, onStartAssessment }: Lan
         {/* CLINICAL DISCLAIMER & RESOURCES FOOTER */}
         <footer className=" pt-10 pb-4 space-y-8 select-none" aria-label="Support Resources and Disclosures">
 
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-[#F1ECE0] pt-6 text-[11px] text-oasis-sage font-sans font-semibold">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-[#F1ECE0] pt-6 text-xs text-oasis-sage font-sans font-semibold">
             <p>&copy; {new Date().getFullYear()} SymptomScribe Companion &bull; Safe, Local, Sovereign client node.</p>
-            <div className="flex items-center gap-4 text-[10px] uppercase font-bold tracking-widest text-[#CD6040]">
+            <div className="flex items-center gap-4 text-[0.7rem] uppercase font-bold tracking-widest text-[#CD6040]">
               <span>100% Client-Side Private</span>
             </div>
           </div>

@@ -271,7 +271,7 @@ export default function ResultView({ result, inputs, notes, onRestart, onGoToHis
       {/* Editorial Report Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-oasis-straw pb-4">
         <div>
-          <span className="bg-[#FAF6ED] text-oasis-clay text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-md border border-oasis-straw font-sans">
+          <span className="bg-[#FAF6ED] text-oasis-clay text-[0.7rem] font-bold uppercase tracking-widest px-3 py-1 rounded-md border border-oasis-straw font-sans">
             Score Summary Profile
           </span>
           <h2 className="text-xl sm:text-2xl font-black text-oasis-ink mt-1.5 font-serif">
@@ -288,7 +288,7 @@ export default function ResultView({ result, inputs, notes, onRestart, onGoToHis
         
         {/* Score Circle Card */}
         <div className="md:col-span-1 bg-white border border-oasis-straw p-6 rounded-2xl flex flex-col items-center justify-center text-center space-y-3 shadow-xs">
-          <span className="text-[10px] uppercase tracking-widest text-oasis-sage font-bold font-sans">
+          <span className="text-[0.7rem] uppercase tracking-widest text-oasis-sage font-bold font-sans">
             PHQ-9 Cumulative Score
           </span>
           
@@ -296,12 +296,12 @@ export default function ResultView({ result, inputs, notes, onRestart, onGoToHis
             <span className="text-3xl font-black text-oasis-ink font-sans">
               {result.numericScore}
             </span>
-            <span className="absolute bottom-4 text-[10px] uppercase font-bold text-oasis-sage">
+            <span className="absolute bottom-4 text-[0.7rem] uppercase font-bold text-oasis-sage">
               / 27 pts
             </span>
           </div>
 
-          <div className="text-[11px] text-slate-400 font-sans leading-normal">
+          <div className="text-xs text-slate-400 font-sans leading-normal">
             Standard clinical sum of 9 questions
           </div>
         </div>
@@ -309,7 +309,7 @@ export default function ResultView({ result, inputs, notes, onRestart, onGoToHis
         {/* Severity Classification Card (2 columns) */}
         <div className="md:col-span-2 bg-white border border-oasis-straw p-6 rounded-2xl flex flex-col justify-between shadow-xs space-y-4">
           <div className="space-y-2">
-            <span className="text-[10px] uppercase tracking-widest text-oasis-sage font-bold font-sans">
+            <span className="text-[0.7rem] uppercase tracking-widest text-oasis-sage font-bold font-sans">
               Screened Status
             </span>
             <div className="flex items-center gap-2">
@@ -352,7 +352,7 @@ export default function ResultView({ result, inputs, notes, onRestart, onGoToHis
           {severityDesc.guideline}
         </p>
         
-        <div className="flex gap-3 text-[11px] text-[#2C4A3A] leading-normal bg-[#EFF5F1]/80 p-4 border border-[#DCEAE1] rounded-xl shadow-2xs">
+        <div className="flex gap-3 text-xs text-[#2C4A3A] leading-normal bg-[#EFF5F1]/80 p-4 border border-[#DCEAE1] rounded-xl shadow-2xs">
           <Heart className="w-5 h-5 text-oasis-clay flex-shrink-0 fill-[#FDF3F0]" />
           <span className="font-sans">
             <strong>Daily Well-being Pointer:</strong> Prioritizing active rest, practicing mindfulness, staying hydrated, and chatting with trusted close friends are wonderful, positive ways to support a balanced mood.
@@ -368,7 +368,7 @@ export default function ResultView({ result, inputs, notes, onRestart, onGoToHis
               <ListChecks className="w-4 h-4 text-oasis-clay" />
               Symptom Specific Breakdown
             </h4>
-            <p className="text-[11px] sm:text-xs text-oasis-sage leading-relaxed">
+            <p className="text-xs text-oasis-sage leading-relaxed">
               Below is the summary of what you reported across each of the nine core areas evaluated during this session.
             </p>
           </div>
@@ -381,11 +381,11 @@ export default function ResultView({ result, inputs, notes, onRestart, onGoToHis
                 <div key={sym.key} className="p-3 border border-oasis-straw rounded-xl space-y-1 flex items-start justify-between gap-3 hover:bg-oasis-sand/50 transition-colors">
                   <div className="space-y-0.5 max-w-[70%]">
                     <p className="text-xs font-bold text-oasis-ink font-serif">{sym.name}</p>
-                    <p className="text-[10px] text-oasis-sage leading-normal line-clamp-2" title={sym.desc}>
+                    <p className="text-xs text-oasis-sage leading-normal line-clamp-2" title={sym.desc}>
                       {sym.desc}
                     </p>
                   </div>
-                  <span className={`text-[9px] px-2.5 py-0.5 rounded-full border shrink-0 text-center font-sans tracking-wide ${badge.style}`}>
+                  <span className={`text-[0.65rem] px-2.5 py-0.5 rounded-full border shrink-0 text-center font-sans tracking-wide ${badge.style}`}>
                     {badge.text}
                   </span>
                 </div>
@@ -398,7 +398,7 @@ export default function ResultView({ result, inputs, notes, onRestart, onGoToHis
       {/* Clinician Notes Log */}
       {notes && (
         <div className="border border-oasis-straw bg-white p-6 rounded-2xl shadow-xs relative mt-4">
-          <span className="absolute -top-3 left-4 bg-oasis-clay text-white text-[9px] px-2.5 py-1 font-sans font-bold uppercase tracking-wider rounded-lg shadow-sm">
+          <span className="absolute -top-3 left-4 bg-oasis-clay text-white text-[0.65rem] px-2.5 py-1 font-sans font-bold uppercase tracking-wider rounded-lg shadow-sm">
             Self Journal Observational Notes
           </span>
           <h4 className="font-bold text-oasis-ink text-xs mb-1.5 mt-1 uppercase font-sans tracking-widest font-serif">

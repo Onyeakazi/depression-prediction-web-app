@@ -392,7 +392,7 @@ export default function HistoryView({
       {/* Editorial History section header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-oasis-straw pb-4">
         <div>
-          <span className="bg-[#FAF6ED] text-oasis-clay text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-md border border-oasis-straw font-sans">
+          <span className="bg-[#FAF6ED] text-oasis-clay text-[0.7rem] font-bold uppercase tracking-widest px-3 py-1 rounded-md border border-oasis-straw font-sans">
             Timeline Records
           </span>
           <h2 className="text-xl sm:text-2xl font-black text-oasis-ink mt-1.5 font-serif">
@@ -477,7 +477,7 @@ export default function HistoryView({
                         })}
                       </span>
 
-                      <span className={`text-[10px] font-sans tracking-widest font-bold px-2.5 py-1 uppercase rounded-md border ${badgeStyle}`}>
+                      <span className={`text-[0.7rem] font-sans tracking-widest font-bold px-2.5 py-1 uppercase rounded-md border ${badgeStyle}`}>
                         {item.result.severityLabel} Severity
                       </span>
                     </div>

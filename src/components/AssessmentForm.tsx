@@ -161,7 +161,7 @@ export default function AssessmentForm({ onSubmit, onCancel, initialAnswers }: A
       {/* Editorial Navigation Masthead */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-oasis-straw pb-4 mb-8">
         <div>
-          <span className="font-mono text-[9px] text-oasis-clay font-bold uppercase tracking-wider block mb-1">
+          <span className="font-mono text-[0.65rem] text-oasis-clay font-bold uppercase tracking-wider block mb-1">
             PART II • WELL-BEING ASSESSMENT
           </span>
           <h2 className="text-xl md:text-2xl font-serif-display font-black text-oasis-ink">
@@ -197,15 +197,15 @@ export default function AssessmentForm({ onSubmit, onCancel, initialAnswers }: A
       {/* Grid Table Layout (Clinical Matrix style) */}
       <div className="bg-white border border-oasis-straw rounded-2xl shadow-xs overflow-hidden mb-8">
         {/* Table Header: Only visible on widescreen desktop */}
-        <div className="hidden md:grid grid-cols-12 border-b border-oasis-straw bg-[#FAF6ED]/60 font-sans text-[10px] font-bold text-oasis-sage tracking-widest uppercase" aria-hidden="true">
+        <div className="hidden md:grid grid-cols-12 border-b border-oasis-straw bg-[#FAF6ED]/60 font-sans text-[0.7rem] font-bold text-oasis-sage tracking-widest uppercase" aria-hidden="true">
           <div className="col-span-1 border-r border-oasis-straw p-3.5 text-center text-oasis-clay">ID</div>
           <div className="col-span-11 grid grid-cols-11">
             <div className="col-span-5 border-r border-oasis-straw p-3.5">CLINICAL SYMPTOM DESCRIPTION</div>
             <div className="col-span-6 grid grid-cols-4 text-center">
-              <div className="p-3 border-r border-oasis-straw hover:bg-[#FAF6ED]/30">0<br/><span className="text-[9px] font-normal text-oasis-sage lowercase font-sans">not at all</span></div>
-              <div className="p-3 border-r border-oasis-straw hover:bg-[#FAF6ED]/30">1<br/><span className="text-[9px] font-normal text-oasis-sage lowercase font-sans">several days</span></div>
-              <div className="p-3 border-r border-oasis-straw hover:bg-[#FAF6ED]/30">2<br/><span className="text-[9px] font-normal text-oasis-sage lowercase font-sans">half the days</span></div>
-              <div className="p-3 hover:bg-[#FAF6ED]/30">3<br/><span className="text-[9px] font-normal text-oasis-sage lowercase font-sans">nearly daily</span></div>
+              <div className="p-3 border-r border-oasis-straw hover:bg-[#FAF6ED]/30">0<br/><span className="text-[0.65rem] font-normal text-oasis-sage lowercase font-sans">not at all</span></div>
+              <div className="p-3 border-r border-oasis-straw hover:bg-[#FAF6ED]/30">1<br/><span className="text-[0.65rem] font-normal text-oasis-sage lowercase font-sans">several days</span></div>
+              <div className="p-3 border-r border-oasis-straw hover:bg-[#FAF6ED]/30">2<br/><span className="text-[0.65rem] font-normal text-oasis-sage lowercase font-sans">half the days</span></div>
+              <div className="p-3 hover:bg-[#FAF6ED]/30">3<br/><span className="text-[0.65rem] font-normal text-oasis-sage lowercase font-sans">nearly daily</span></div>
             </div>
           </div>
         </div>
@@ -270,7 +270,7 @@ export default function AssessmentForm({ onSubmit, onCancel, initialAnswers }: A
                           />
                           <span className="font-mono text-xs md:text-md">{opt.value}</span>
                           {/* Mobile Option Guide text */}
-                          <span className="md:hidden text-[9px] font-sans opacity-95 text-center">
+                          <span className="md:hidden text-[0.65rem] font-sans opacity-95 text-center">
                             {opt.title}
                           </span>
                         </label>
@@ -287,7 +287,7 @@ export default function AssessmentForm({ onSubmit, onCancel, initialAnswers }: A
       {/* Diagnostic Context Area (Second Step Only) */}
       {currentStep === 1 && (
         <div id="clinician-notes-sec" className="border border-oasis-straw bg-gradient-to-br from-white to-[#FAF6ED]/60 p-6 mb-8 rounded-2xl shadow-xs relative mt-4">
-          <span className="absolute -top-3 left-4 bg-oasis-clay text-white text-[9px] px-2.5 py-1 font-sans font-bold uppercase tracking-wider rounded-lg shadow-xs">
+          <span className="absolute -top-3 left-4 bg-oasis-clay text-white text-[0.65rem] px-2.5 py-1 font-sans font-bold uppercase tracking-wider rounded-lg shadow-xs">
             OBSERVATIONAL CLINICIAN REPORT DATA
           </span>
           <label htmlFor="clinician_notes_field" className="font-serif font-extrabold text-md flex items-center gap-2 mb-2 text-oasis-ink mt-2">
@@ -311,7 +311,7 @@ export default function AssessmentForm({ onSubmit, onCancel, initialAnswers }: A
       {/* Validation Prompt Banner */}
       {validationError && (
         <div className="bg-orange-50 border border-orange-100 text-orange-950 p-4 mb-8 rounded-xl font-sans text-xs flex items-center gap-2 shadow-xs animate-shake" role="alert">
-          <span className="font-bold uppercase text-[9px] bg-oasis-clay text-white px-2 py-0.5 rounded">
+          <span className="font-bold uppercase text-[0.65rem] bg-oasis-clay text-white px-2 py-0.5 rounded">
             UNFINISHED
           </span>
           <span className="font-semibold">{validationError}</span>
