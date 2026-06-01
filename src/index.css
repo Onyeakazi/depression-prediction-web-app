@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Roboto:wght@300;400;500;700;900&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Newsreader", Georgia, serif;
+  --font-sans: "Roboto", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Rich Earthy Oasis Palette */
+  --color-oasis-sand: #FAF8F2;
+  /* Off-white warm Ivory Sand */
+  --color-oasis-clay: #CD6040;
+  /* Terracotta Clay */
+  --color-oasis-sage: #4E6E5D;
+  /* Calm Sage Green */
+  --color-oasis-forest: #1E3125;
+  /* Deep Forest Moss */
+  --color-oasis-ink: #1C201E;
+  /* Soft Midnight Charcoal */
+  --color-oasis-straw: #F1ECE0;
+  /* Warm Straw Highlight */
+}
+
+@layer base {
+  html {
+    font-size: 21px; /* Scaled root font-size by +5px (from 16px to 21px) */
+  }
+
+  body {
+    background-color: #FAF8F2;
+    /* Warm Ivory Sand canvas */
+    color: #1C201E;
+    /* Soft Midnight Charcoal text */
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-serif-editor {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Gracefully handle accessibility requirements for prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: 0s !important;
+    animation-duration: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Elegant hand-crafted layout borders & dividers */
+.oasis-divider {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(205, 96, 64, 0), rgba(142, 151, 145, 0.4), rgba(205, 96, 64, 0));
+  margin: 1.5rem 0;
+}

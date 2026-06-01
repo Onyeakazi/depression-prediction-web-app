@@ -1,0 +1,6 @@
+{
+  "name": "Depression Prediction System using Fuzzy Logic",
+  "description": "An academic clinical assessment system using fuzzified Patient Health Questionnaire-9 (PHQ-9) inputs to classify depression severity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
