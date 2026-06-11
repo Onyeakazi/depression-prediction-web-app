@@ -59,7 +59,7 @@ export default function Sidebar({
       <aside 
         id="app-sidebar"
         className={`fixed top-0 bottom-0 left-0 bg-[#1E3125] text-white w-[290px] z-50 transform transition-transform duration-300 ease-in-out border-r border-[#2C4636] flex flex-col justify-between 
-          lg:translate-x-0 lg:static lg:h-screen lg:max-h-screen
+          lg:translate-x-0 lg:sticky lg:top-0 lg:h-screen lg:max-h-screen
           ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
         aria-label="Sidebar Navigation"
       >

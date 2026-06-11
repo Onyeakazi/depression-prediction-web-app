@@ -64,3 +64,52 @@
   background-image: linear-gradient(to right, rgba(205, 96, 64, 0), rgba(142, 151, 145, 0.4), rgba(205, 96, 64, 0));
   margin: 1.5rem 0;
 }
+
+/* Elegant custom scrollbar styling for a polished look */
+
+/* 1. Sidebar specific scrollbar (dark green theme) */
+#app-sidebar div::-webkit-scrollbar {
+  width: 6px;
+}
+
+#app-sidebar div::-webkit-scrollbar-track {
+  background: #1E3125; /* Matches sidebar background */
+}
+
+#app-sidebar div::-webkit-scrollbar-thumb {
+  background: #2C4636; /* Matches sidebar border */
+  border-radius: 10px;
+}
+
+#app-sidebar div::-webkit-scrollbar-thumb:hover {
+  background: #CD6040; /* Terracotta Clay highlight on hover */
+}
+
+#app-sidebar div {
+  scrollbar-width: thin;
+  scrollbar-color: #2C4636 #1E3125; /* Firefox support */
+}
+
+/* 2. Main window & general page scrollbar (light sand theme) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F2; /* Oasis Sand */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D9D2C2; /* Soft sand border tone */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #CD6040; /* Terracotta Clay highlight */
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #D9D2C2 #FAF8F2; /* Firefox support */
+}
